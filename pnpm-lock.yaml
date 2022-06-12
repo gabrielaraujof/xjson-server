@@ -22,7 +22,7 @@ specifiers:
   eslint-plugin-promise: ^6.0.0
   eslint-plugin-standard: ^4.1.0
   express: ^4.17.1
-  express-urlrewrite: ^1.4.0
+  express-urlrewrite: ^2.0.0
   husky: ^8.0.0
   jest: ^28.0.0
   json-parse-helpfulerror: ^1.0.3
@@ -55,7 +55,7 @@ dependencies:
   cors: 2.8.5
   errorhandler: 1.5.1
   express: 4.18.1
-  express-urlrewrite: 1.4.0
+  express-urlrewrite: 2.0.0
   json-parse-helpfulerror: 1.0.3
   lodash: 4.17.21
   lodash-id: 0.14.1
@@ -3018,11 +3018,11 @@ packages:
       jest-util: 28.1.1
     dev: true
 
-  /express-urlrewrite/1.4.0:
-    resolution: {integrity: sha512-PI5h8JuzoweS26vFizwQl6UTF25CAHSggNv0J25Dn/IKZscJHWZzPrI5z2Y2jgOzIaw2qh8l6+/jUcig23Z2SA==}
+  /express-urlrewrite/2.0.0:
+    resolution: {integrity: sha512-WU2wariBmEDEVMf+uK3tLbTISQFC8yQ0Wy0tx+KCSs5g1tM+FPClG3bUBtACT4VDyAZrkZEh9lMQX5R9Vfv3Eg==}
     dependencies:
       debug: 4.3.4
-      path-to-regexp: 1.8.0
+      path-to-regexp: 6.2.1
     transitivePeerDependencies:
       - supports-color
     dev: false
@@ -3741,10 +3741,6 @@ packages:
 
   /is-yarn-global/0.3.0:
     resolution: {integrity: sha512-VjSeb/lHmkoyd8ryPVIKvOCn4D1koMqY+vqyjjUfc3xyKtP4dYOxM44sZrnqQSzSds3xyOrUTLTC9LVCVgLngw==}
-    dev: false
-
-  /isarray/0.0.1:
-    resolution: {integrity: sha512-D2S+3GLxWH+uhrNEcoh/fnmYeP8E8/zHl644d/jdA0g2uyXvy3sb0qxotE+ne0LtccHknQzWwZEzhak7oJ0COQ==}
     dev: false
 
   /isarray/1.0.0:
@@ -4957,10 +4953,8 @@ packages:
     resolution: {integrity: sha512-5DFkuoqlv1uYQKxy8omFBeJPQcdoE07Kv2sferDCrAq1ohOU+MSDswDIbnx3YAM60qIOnYa53wBhXW0EbMonrQ==}
     dev: false
 
-  /path-to-regexp/1.8.0:
-    resolution: {integrity: sha512-n43JRhlUKUAlibEJhPeir1ncUID16QnEjNpwzNdO3Lm4ywrBpBZ5oLD0I6br9evr1Y9JTqwRtAh7JLoOzAQdVA==}
-    dependencies:
-      isarray: 0.0.1
+  /path-to-regexp/6.2.1:
+    resolution: {integrity: sha512-JLyh7xT1kizaEvcaXOQwOc2/Yhw6KZOvPf1S8401UyLk86CU79LN3vl7ztXGm/pZ+YjoyAJ4rxmHwbkBXJX+yw==}
     dev: false
 
   /path-type/3.0.0:
