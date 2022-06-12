@@ -1,48 +1,48 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@babel/cli': ^7.12.1
-  '@babel/core': ^7.12.3
-  '@babel/node': ^7.12.6
-  '@babel/preset-env': ^7.12.1
+  '@babel/cli': 7.17.10
+  '@babel/core': 7.18.2
+  '@babel/node': 7.17.10
+  '@babel/preset-env': 7.18.2
   body-parser: ^1.19.0
   chalk: ^4.1.2
   compression: ^1.7.4
   connect-pause: ^0.1.1
   cors: ^2.8.5
-  cross-env: ^7.0.2
+  cross-env: 7.0.3
   errorhandler: ^1.5.1
-  eslint: ^7.13.0
-  eslint-config-prettier: ^8.3.0
-  eslint-config-standard: ^16.0.1
-  eslint-plugin-import: ^2.22.1
-  eslint-plugin-node: ^11.1.0
-  eslint-plugin-prettier: ^3.1.4
-  eslint-plugin-promise: ^4.2.1
-  eslint-plugin-standard: ^4.1.0
+  eslint: 7.32.0
+  eslint-config-prettier: 8.5.0
+  eslint-config-standard: 16.0.3
+  eslint-plugin-import: 2.26.0
+  eslint-plugin-node: 11.1.0
+  eslint-plugin-prettier: 3.4.1
+  eslint-plugin-promise: 4.3.1
+  eslint-plugin-standard: 4.1.0
   express: ^4.17.1
   express-urlrewrite: ^1.4.0
-  husky: ^6.0.0
-  jest: ^26.6.3
+  husky: 6.0.0
+  jest: 26.6.3
   json-parse-helpfulerror: ^1.0.3
   lodash: ^4.17.21
   lodash-id: ^0.14.1
   lowdb: ^1.0.0
-  markdown-toc: ^1.2.0
+  markdown-toc: 1.2.0
   method-override: ^3.0.0
-  mkdirp: ^1.0.4
+  mkdirp: 1.0.4
   morgan: ^1.10.0
   nanoid: ^3.1.23
-  npm-run-all: ^4.1.5
-  os-tmpdir: ^2.0.0
+  npm-run-all: 4.1.5
+  os-tmpdir: 2.0.0
   please-upgrade-node: ^3.2.0
   pluralize: ^8.0.0
-  prettier: ^2.3.2
-  rimraf: ^3.0.2
+  prettier: 2.6.2
+  rimraf: 3.0.2
   server-destroy: ^1.0.1
-  server-ready: ^0.3.1
-  supertest: ^6.0.1
-  temp-write: ^4.0.0
+  server-ready: 0.3.1
+  supertest: 6.2.3
+  temp-write: 4.0.0
   update-notifier: ^5.1.0
   yargs: ^17.0.1
 
