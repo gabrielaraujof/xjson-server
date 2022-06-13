@@ -1,5 +1,5 @@
-const assert = require('assert')
-const utils = require('../../src/server/utils')
+import assert from 'assert'
+import utils from '../../src/server/utils'
 
 describe('utils', () => {
   describe('getPage', () => {

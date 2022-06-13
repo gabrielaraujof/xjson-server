@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   FILE,
   JS,
   URL,

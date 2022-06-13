@@ -1,6 +1,6 @@
-const assert = require('assert')
-const request = require('supertest')
-const jsonServer = require('../../src/server')
+import assert from 'assert'
+import request from 'supertest'
+import jsonServer from '../../src/server'
 
 describe('Fake server', () => {
   let server

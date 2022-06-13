@@ -1,7 +1,7 @@
-const { nanoid } = require('nanoid')
-const pluralize = require('pluralize')
+import { nanoid } from 'nanoid'
+import pluralize from 'pluralize'
 
-module.exports = {
+export default {
   getRemovable,
   createId,
   deepQuery,

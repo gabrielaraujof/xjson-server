@@ -1,3 +1,7 @@
 #!/usr/bin/env node
-require('please-upgrade-node')(require('../../package.json'))
-require('./')()
+import pkg from '../../package.json'
+import pleaseUpgradeNode from 'please-upgrade-node'
+import cli from '.'
+
+pleaseUpgradeNode(pkg)
+cli()

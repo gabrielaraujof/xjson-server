@@ -2,9 +2,9 @@ lockfileVersion: 5.4
 
 specifiers:
   '@babel/cli': ^7.12.1
-  '@babel/core': ^7.12.3
+  '@babel/core': ^7.18.2
   '@babel/node': ^7.12.6
-  '@babel/preset-env': ^7.12.1
+  '@babel/preset-env': ^7.18.2
   body-parser: ^1.19.0
   chalk: ^4.1.2
   compression: ^1.7.4
@@ -24,7 +24,7 @@ specifiers:
   express: ^4.17.1
   express-urlrewrite: ^2.0.0
   husky: ^8.0.0
-  jest: ^28.0.0
+  jest: ^28.1.1
   json-parse-helpfulerror: ^1.0.3
   lodash: ^4.17.21
   lodash-id: ^0.14.1

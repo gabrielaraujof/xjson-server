@@ -1,7 +1,7 @@
-const assert = require('assert')
-const _ = require('lodash')
-const lodashId = require('lodash-id')
-const mixins = require('../../src/server/mixins')
+import assert from 'assert'
+import _ from 'lodash'
+import lodashId from 'lodash-id'
+import mixins from '../../src/server/mixins'
 
 describe('mixins', () => {
   let db

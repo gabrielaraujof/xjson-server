@@ -1,5 +1,5 @@
-const request = require('supertest')
-const jsonServer = require('../../src/server')
+import request from 'supertest'
+import jsonServer from '../../src/server'
 
 describe('Server', () => {
   let server

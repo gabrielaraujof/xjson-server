@@ -1,9 +1,9 @@
-const express = require('express')
-const write = require('./write')
-const getFullURL = require('./get-full-url')
-const delay = require('./delay')
+import express from 'express'
+import write from './write'
+import getFullURL from './get-full-url'
+import delay from './delay'
 
-module.exports = (db, name, opts) => {
+export default (db, name, opts) => {
   const router = express.Router()
   router.use(delay)
 
