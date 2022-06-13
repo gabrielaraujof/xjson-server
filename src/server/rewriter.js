@@ -1,7 +1,7 @@
-const express = require('express')
-const rewrite = require('express-urlrewrite')
+import express from 'express'
+import rewrite from 'express-urlrewrite'
 
-module.exports = (routes) => {
+export default (routes) => {
   const router = express.Router()
 
   router.get('/__rules', (req, res) => {

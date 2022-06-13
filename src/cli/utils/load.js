@@ -1,12 +1,12 @@
-const fs = require('fs')
-const path = require('path')
-const http = require('http')
-const https = require('https')
-const low = require('lowdb')
-const FileAsync = require('lowdb/adapters/FileAsync')
-const Memory = require('lowdb/adapters/Memory')
-const is = require('./is')
-const chalk = require('chalk')
+import fs from 'fs'
+import path from 'path'
+import http from 'http'
+import https from 'https'
+import low from 'lowdb'
+import FileAsync from 'lowdb/adapters/FileAsync'
+import Memory from 'lowdb/adapters/Memory'
+import is from './is'
+import chalk from 'chalk'
 
 const example = {
   posts: [{ id: 1, title: 'json-server', author: 'typicode' }],
@@ -14,7 +14,7 @@ const example = {
   profile: { name: 'typicode' },
 }
 
-module.exports = function (source) {
+export default function (source) {
   return new Promise((resolve, reject) => {
     if (is.FILE(source)) {
       if (!fs.existsSync(source)) {

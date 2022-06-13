@@ -1,13 +1,13 @@
-const fs = require('fs')
-const path = require('path')
-const jph = require('json-parse-helpfulerror')
-const _ = require('lodash')
-const chalk = require('chalk')
-const enableDestroy = require('server-destroy')
-const pause = require('connect-pause')
-const is = require('./utils/is')
-const load = require('./utils/load')
-const jsonServer = require('../server')
+import fs from 'fs'
+import path from 'path'
+import jph from 'json-parse-helpfulerror'
+import _ from 'lodash'
+import chalk from 'chalk'
+import enableDestroy from 'server-destroy'
+import pause from 'connect-pause'
+import is from './utils/is'
+import load from './utils/load'
+import jsonServer from '../server'
 
 function prettyPrint(argv, object, rules) {
   const root = `http://${argv.host}:${argv.port}`
@@ -77,7 +77,7 @@ function createApp(db, routes, middlewares, argv) {
   return app
 }
 
-module.exports = function (argv) {
+export default function (argv) {
   const source = argv._[0]
   let app
   let server

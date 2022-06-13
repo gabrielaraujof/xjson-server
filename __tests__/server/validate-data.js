@@ -1,5 +1,5 @@
-const assert = require('assert')
-const validateData = require('../../src/server/router/validate-data')
+import assert from 'assert'
+import validateData from '../../src/server/router/validate-data'
 
 describe('validateData', () => {
   test('should throw an error if data contains /', () => {

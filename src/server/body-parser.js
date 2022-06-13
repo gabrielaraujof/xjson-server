@@ -1,6 +1,6 @@
-const bodyParser = require('body-parser')
+import bodyParser from 'body-parser'
 
-module.exports = [
+export default [
   bodyParser.json({ limit: '10mb', extended: false }),
   bodyParser.urlencoded({ extended: false }),
 ]

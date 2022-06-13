@@ -1,9 +1,14 @@
-const express = require('express')
+import express from 'express'
 
-module.exports = {
+import defaults from './defaults'
+import router from './router'
+import rewriter from './rewriter'
+import bodyParser from './body-parser'
+
+export default {
   create: () => express().set('json spaces', 2),
-  defaults: require('./defaults'),
-  router: require('./router'),
-  rewriter: require('./rewriter'),
-  bodyParser: require('./body-parser'),
+  defaults,
+  router,
+  rewriter,
+  bodyParser,
 }

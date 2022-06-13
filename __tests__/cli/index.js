@@ -1,13 +1,13 @@
-const fs = require('fs')
-const path = require('path')
-const cp = require('child_process')
-const assert = require('assert')
-const supertest = require('supertest')
-const osTmpdir = require('os-tmpdir')
-const tempWrite = require('temp-write')
-const mkdirp = require('mkdirp')
-const rimraf = require('rimraf')
-const serverReady = require('server-ready')
+import fs from 'fs'
+import path from 'path'
+import cp from 'child_process'
+import assert from 'assert'
+import supertest from 'supertest'
+import osTmpdir from 'os-tmpdir'
+import tempWrite from 'temp-write'
+import mkdirp from 'mkdirp'
+import rimraf from 'rimraf'
+import serverReady from 'server-ready'
 
 let PORT = 3100
 
