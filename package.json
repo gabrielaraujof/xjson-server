@@ -41,7 +41,7 @@
     "lowdb": "^1.0.0",
     "method-override": "^3.0.0",
     "morgan": "^1.10.0",
-    "nanoid": "^3.1.23",
+    "nanoid": "^4.0.0",
     "pluralize": "^8.0.0",
     "read-pkg-up": "^9.1.0",
     "semver": "^7.3.7",
