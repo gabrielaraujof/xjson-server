@@ -1,15 +1,19 @@
-export default {
-  getPage,
+interface Page<T> {
+  items: Array<T>;
+  prev?: number;
+  next?: number;
+  current?: number;
+  first?: number;
+  last?: number;
 }
 
-function getPage(array, page, perPage) {
-  const obj = {}
+export function getPage<T>(array: T[], page: number, perPage: number): Page<T> {
   const start = (page - 1) * perPage
   const end = page * perPage
 
-  obj.items = array.slice(start, end)
+  const obj: Page<T> = { items: array.slice(start, end) }
   if (obj.items.length === 0) {
-    return obj
+    return obj;
   }
 
   if (page > 1) {
@@ -28,3 +32,5 @@ function getPage(array, page, perPage) {
 
   return obj
 }
+
+export default { getPage };

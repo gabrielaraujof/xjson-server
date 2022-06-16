@@ -1,9 +1,13 @@
 import updateNotifier from 'update-notifier'
 import yargs from 'yargs'
 import run from './run'
-import pkg from '../../package.json'
+import checkNodeVersion from './utils/version'
 
-export default function () {
+export default async function () {
+  const { readPackageUpSync } = await import('read-pkg-up')
+  const { packageJson: pkg } = readPackageUpSync() ?? {}
+
+  checkNodeVersion(pkg.engines?.node ?? '')
   updateNotifier({ pkg }).notify()
 
   const argv = yargs

@@ -17,7 +17,7 @@ const middlewareFiles = {
   postbody: './../../__fixtures__/middlewares/postbody.js',
 }
 
-const bin = path.join(__dirname, '../../lib/cli/bin')
+const bin = path.join(__dirname, '../../lib/cjs/cli/bin')
 
 function cli(args) {
   return cp.spawn('node', ['--', bin, '-p', PORT].concat(args), {
