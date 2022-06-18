@@ -1,18 +1,56 @@
 import fs from 'fs'
 import path from 'path'
-import express from 'express'
+import express, { NextFunction, Request, Response } from 'express'
 import logger from 'morgan'
 import cors from 'cors'
 import compression from 'compression'
 import errorhandler from 'errorhandler'
 import bodyParser from './body-parser'
 
-export default function (opts) {
+interface MiddlewaresOptions {
+  /**
+   * Path to static files
+   * @default "public" (if folder exists)
+   */
+  static?: string;
+
+  /**
+   * Enable logger middleware
+   * @default true
+   */
+  logger?: boolean;
+
+  /**
+   * Enable body-parser middleware
+   * @default false
+   */
+  bodyParser?: boolean;
+
+  /**
+   * Disable compression
+   * @default false
+   */
+  noGzip?: boolean;
+
+  /**
+   * Disable CORS
+   * @default false
+   */
+  noCors?: boolean;
+
+  /**
+   * Accept only GET requests
+   * @default false
+   */
+  readOnly?: boolean;
+}
+
+export default function (userOpts: MiddlewaresOptions) {
   const userDir = path.join(process.cwd(), 'public')
   const defaultDir = path.join(__dirname, '../../public')
   const staticDir = fs.existsSync(userDir) ? userDir : defaultDir
 
-  opts = Object.assign({ logger: true, static: staticDir }, opts)
+  const opts = { logger: true, static: staticDir, ...userOpts };
 
   const arr = []
 
@@ -38,7 +76,7 @@ export default function (opts) {
   if (opts.logger) {
     arr.push(
       logger('dev', {
-        skip: (req) =>
+        skip: (req: Request) =>
           process.env.NODE_ENV === 'test' || req.path === '/favicon.ico',
       })
     )
@@ -46,7 +84,7 @@ export default function (opts) {
 
   // No cache for IE
   // https://support.microsoft.com/en-us/kb/234067
-  arr.push((req, res, next) => {
+  arr.push((req: Request, res: Response, next: NextFunction) => {
     res.header('Cache-Control', 'no-cache')
     res.header('Pragma', 'no-cache')
     res.header('Expires', '-1')
@@ -55,7 +93,7 @@ export default function (opts) {
 
   // Read-only
   if (opts.readOnly) {
-    arr.push((req, res, next) => {
+    arr.push((req: Request, res: Response, next: NextFunction) => {
       if (req.method === 'GET') {
         next() // Continue
       } else {

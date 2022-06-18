@@ -1,6 +1,6 @@
 import _ from 'lodash'
 
-function validateKey(key) {
+function validateKey(key: string) {
   if (key.indexOf('/') !== -1) {
     const msg = [
       `Oops, found / character in database property '${key}'.`,
@@ -12,7 +12,7 @@ function validateKey(key) {
   }
 }
 
-export default (obj) => {
+export default (obj: object) => {
   if (_.isPlainObject(obj)) {
     Object.keys(obj).forEach(validateKey)
   } else {
