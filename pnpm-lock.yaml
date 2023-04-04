@@ -49,7 +49,7 @@ specifiers:
   server-destroy: ^1.0.1
   server-ready: ^0.3.1
   supertest: ^6.0.1
-  temp-write: ^4.0.0
+  temp-write: ^5.0.0
   ts-jest: ^28.0.5
   typescript: ^4.7.3
   update-notifier: ^5.1.0
@@ -108,7 +108,7 @@ devDependencies:
   rimraf: 3.0.2
   server-ready: 0.3.1
   supertest: 6.2.3
-  temp-write: 4.0.0
+  temp-write: 5.0.0
   ts-jest: 28.0.5_advltmg2fh6xvdhi4vlncfssbi
   typescript: 4.7.3
 
@@ -5811,20 +5811,19 @@ packages:
     engines: {node: '>= 0.4'}
     dev: true
 
-  /temp-dir/1.0.0:
-    resolution: {integrity: sha512-xZFXEGbG7SNC3itwBzI3RYjq/cEhBkx2hJuKGIUOcEULmkQExXiHat2z/qkISYsuR+IKumhEfKKbV5qXmhICFQ==}
-    engines: {node: '>=4'}
+  /temp-dir/2.0.0:
+    resolution: {integrity: sha512-aoBAniQmmwtcKp/7BzsH8Cxzv8OL736p7v1ihGb5e9DJ9kTwGWHrQrVB5+lfVDzfGrdRzXch+ig7LHaY1JTOrg==}
+    engines: {node: '>=8'}
     dev: true
 
-  /temp-write/4.0.0:
-    resolution: {integrity: sha512-HIeWmj77uOOHb0QX7siN3OtwV3CTntquin6TNVg6SHOqCP3hYKmox90eeFOGaY1MqJ9WYDDjkyZrW6qS5AWpbw==}
-    engines: {node: '>=8'}
+  /temp-write/5.0.0:
+    resolution: {integrity: sha512-cJhnzBW7DjNox7VcZDXeNlQSkIh3mX/h+M0n0Fh+zgT7YAHwI9c+OngKx4MCiQCVx9iXxV104xYlJgDBCCtawA==}
+    engines: {node: '>=12'}
     dependencies:
       graceful-fs: 4.2.10
       is-stream: 2.0.1
-      make-dir: 3.1.0
-      temp-dir: 1.0.0
-      uuid: 3.4.0
+      temp-dir: 2.0.0
+      uuid: 8.3.2
     dev: true
 
   /terminal-link/2.1.1:
@@ -6073,9 +6072,8 @@ packages:
     engines: {node: '>= 0.4.0'}
     dev: false
 
-  /uuid/3.4.0:
-    resolution: {integrity: sha512-HjSDRw6gZE5JMggctHBcjVak08+KEVhSIiDzFnT9S9aegmp85S/bReBVTb4QTFaRNptJ9kuYaNhnbNEOkbKb/A==}
-    deprecated: Please upgrade  to version 7 or higher.  Older versions may use Math.random() in certain circumstances, which is known to be problematic.  See https://v8.dev/blog/math-random for details.
+  /uuid/8.3.2:
+    resolution: {integrity: sha512-+NYs2QeMWy+GWFOEm9xnn6HCDp0l7QBD7ml8zLUmJ+93Q5NF0NocErnwkTkXVFNiX3/fpC6afS8Dhb/gz7R7eg==}
     hasBin: true
     dev: true
 
